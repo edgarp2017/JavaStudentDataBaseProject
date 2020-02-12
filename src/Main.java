@@ -22,10 +22,13 @@ public class Main extends Application {
     private String password = "password";
 
     public void getConnection() throws Exception {
-        try { this.con = DriverManager.getConnection(this.url, this.user, this.password); }
-        catch (SQLException e) { e.printStackTrace(); }
+        try {
+            this.con = DriverManager.getConnection(this.url, this.user, this.password);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
-    
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         double width = 900, height = 700, buttonWidth = 400, buttonHeight = 30;
