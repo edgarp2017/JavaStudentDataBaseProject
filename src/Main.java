@@ -25,11 +25,7 @@ public class Main extends Application {
         try { this.con = DriverManager.getConnection(this.url, this.user, this.password); }
         catch (SQLException e) { e.printStackTrace(); }
     }
-
-    public void drawTable() {
-
-    }
-
+    
     @Override
     public void start(Stage primaryStage) throws Exception {
         double width = 900, height = 700, buttonWidth = 400, buttonHeight = 30;
